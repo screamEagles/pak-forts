@@ -1,0 +1,90 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.forts-list {
+    width: 25%;
+    height: 100vh;
+    overflow: auto;
+}
+
+#map {
+    height: 100vh;
+    width: 75%;
+}
+
+.forts-list .heading {
+    background-color: forestgreen;
+    color: white;
+}
+
+.forts-list .heading h2 {
+    padding: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: forestgreen;
+    border-radius: 0;
+}
+
+.forts-list ul.list {
+    padding: 0 1rem;
+    list-style-type: none;
+}
+
+.forts-list .fort {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.forts-list li:last-child .fort {
+    border: none;
+}
+
+.forts-list .fort a {
+    text-decoration: none;
+    font-size: 20px;
+    color: green;
+    font-weight: 700;
+}
+
+.forts-list .fort p {
+    font-size: 14.5px;
+}
+
+.leaflet-popup-content-wrapper {
+    padding: 0;
+    overflow: hidden;
+}
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    margin: 0;
+}
+.leaflet-popup-content-wrapper h4 {
+    padding: 16px;
+    background: forestgreen;
+    color: white;
+    font-size: 16px;
+}
+.leaflet-popup-content-wrapper p {
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
